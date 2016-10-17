@@ -24,7 +24,6 @@ namespace _34Lab7
             System.Threading.Thread.Sleep(5000);
             Label1.Text = DateTime.Now.ToString();
         }
-
         
     }
 }

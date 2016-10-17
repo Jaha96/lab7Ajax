@@ -11,11 +11,15 @@
         <div id="header"></div>
         <div id="sidebar"></div>
         <div id="content">
+            <asp:Timer ID="Timer1" runat="server">
+                
+            </asp:Timer>
             <asp:ScriptManager ID="ScriptManager1" runat="server">
                 
             </asp:ScriptManager>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
+                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
                     <asp:UpdateProgress ID="UpdateProgress1" runat="server">
                         <ProgressTemplate>
                           <img src="img/02-loading-blossom-2x.gif" style=" background-size: cover" />
@@ -23,7 +27,7 @@
                     </asp:UpdateProgress>
                     <asp:Label ID="Label1" runat="server" Text="Label">
             </asp:Label>
-                    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" style="height: 26px" />
                 </ContentTemplate>
             </asp:UpdatePanel>
         </div>
